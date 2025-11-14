@@ -4,3 +4,8 @@
   font-size: 30px;
   font-weight: bold;
 }
+.netlify-link {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
