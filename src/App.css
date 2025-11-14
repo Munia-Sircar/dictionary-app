@@ -1,11 +1,16 @@
-.App-header {
+.App {
   text-align: center;
   margin: 20px;
-  font-size: 30px;
   font-weight: bold;
+  font-size: 30px;
 }
+.App-header {
+  font-size: 40px;
+}
+
 .netlify-link {
   display: block;
   margin: 0 auto;
   text-align: center;
+  font-size: 25px;
 }
