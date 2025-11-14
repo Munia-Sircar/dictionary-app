@@ -7,7 +7,8 @@ export default function App() {
       <a
         href="https://moon-dictionary-app.netlify.app/"
         className="netlify-link"
-        target="_blank">
+        target="_blank"
+        rel="noreferrer">
         Netlify
       </a>
     </div>
