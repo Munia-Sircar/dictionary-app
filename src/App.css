@@ -8,9 +8,10 @@
   font-size: 40px;
 }
 
-.netlify-link {
+footer {
   display: block;
   margin: 0 auto;
   text-align: center;
-  font-size: 25px;
+  font-size: 18px;
+  font-weight: lighter;
 }
