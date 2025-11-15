@@ -4,14 +4,11 @@
   font-weight: bold;
   font-size: 30px;
 }
-.App-header {
-  font-size: 40px;
-}
 
 footer {
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
   text-align: center;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: lighter;
 }
