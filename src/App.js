@@ -5,7 +5,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <header className="App-header">Hello Everyone!</header>
+        <header className="App-header">Moon's Dictionary 📚</header>
         <Dictionary />
         <footer>
           This project is coded by Munia Sircar🌹, hosted on {""}
