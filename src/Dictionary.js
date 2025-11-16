@@ -5,7 +5,7 @@ import Results from "./Results";
 
 export default function Dictionary() {
   let [word, setWord] = useState(null);
-  let [results, setResults] = useState([]);
+  let [results, setResults] = useState("");
 
   function apiCall(response) {
     console.log(response.data);
