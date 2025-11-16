@@ -4,6 +4,16 @@
   font-weight: bold;
 }
 
+.container {
+  display: block;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+header {
+  font-size: 28px;
+}
+
 footer {
   display: block;
   margin: 0px auto;
