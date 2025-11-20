@@ -5,3 +5,8 @@
   background-color: white;
   text-align: left;
 }
+
+h2 {
+  color: dimgray;
+  font-style: italic;
+}
