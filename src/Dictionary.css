@@ -1,9 +1,10 @@
 .search-bar {
   margin: 20px;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 5px;
   border: none;
   box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.5);
+  font-size: 15px;
 }
 
 img {

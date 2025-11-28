@@ -1,12 +1,16 @@
 .Results {
-  margin: 20px;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: white;
   text-align: left;
 }
 
 h2 {
   color: dimgray;
   font-style: italic;
+}
+
+section {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  margin: 15px;
 }
