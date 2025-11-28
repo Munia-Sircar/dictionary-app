@@ -5,3 +5,8 @@
   border: none;
   box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.5);
 }
+
+img {
+  border-radius: 10px;
+  margin-bottom: 8px;
+}

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results";
+import Words from "./Words.jpg";
 
 export default function Dictionary() {
   let [word, setWord] = useState(null);
@@ -25,17 +26,33 @@ export default function Dictionary() {
     setWord(event.target.value);
   }
 
-  return (
-    <div className="dictionary">
-      <form onSubmit={submitWord}>
-        <input
-          type="search"
-          className="search-bar"
-          placeholder="Search"
-          onChange={handleWordChange}
-        />
-      </form>
-      <Results results={results} />
-    </div>
-  );
+  if (results) {
+    return (
+      <div className="dictionary">
+        <form onSubmit={submitWord}>
+          <input
+            type="search"
+            className="search-bar"
+            placeholder="Search"
+            onChange={handleWordChange}
+          />
+        </form>
+        <Results results={results} />
+      </div>
+    );
+  } else {
+    return (
+      <div className="dictionary">
+        <form onSubmit={submitWord}>
+          <input
+            type="search"
+            className="search-bar"
+            placeholder="Search"
+            onChange={handleWordChange}
+          />
+        </form>
+        <img src={Words} alt="Words" width="500" />
+      </div>
+    );
+  }
 }
