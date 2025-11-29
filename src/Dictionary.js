@@ -2,15 +2,22 @@ import React, { useState } from "react";
 import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results";
+import Photos from "./Photos";
 import Words from "./Words.jpg";
 
 export default function Dictionary() {
   let [word, setWord] = useState(null);
   let [results, setResults] = useState("");
+  let [photos, setPhotos] = useState("");
 
   function apiCall(response) {
     console.log(response.data);
     setResults(response.data);
+  }
+
+  function imageApiCall(response) {
+    console.log(response.data.photos);
+    setPhotos(response.data.photos);
   }
 
   function submitWord(event) {
@@ -20,6 +27,11 @@ export default function Dictionary() {
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${word}&key=${key}`;
 
     axios.get(apiUrl).then(apiCall);
+
+    let imageApiKey = "28d0bff0ffaa52b09e33da6etode543b";
+    let imageApiUrl = `https://api.shecodes.io/images/v1/search?query=${word}&key=${imageApiKey}`;
+
+    axios.get(imageApiUrl).then(imageApiCall);
   }
 
   function handleWordChange(event) {
@@ -38,6 +50,7 @@ export default function Dictionary() {
           />
         </form>
         <Results results={results} />
+        <Photos photos={photos} />
       </div>
     );
   } else {
