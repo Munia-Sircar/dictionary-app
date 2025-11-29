@@ -8,10 +8,18 @@ export default function App() {
         <header className="App-header">Moon's Dictionary 📚</header>
         <Dictionary />
         <footer>
-          This project is coded by <strong>Munia Sircar</strong>🌹 ~{" "}
+          This project is coded by{" "}
+          <a
+            href="https://github.com/Munia-Sircar"
+            className="profile-link"
+            target="_blank"
+            rel="noreferrer">
+            Munia Sircar
+          </a>{" "}
+          🌹 ~{" "}
           <a
             href="https://github.com/Munia-Sircar/dictionary-app"
-            className="netlify-link"
+            className="github-link"
             target="_blank"
             rel="noreferrer">
             GitHub
