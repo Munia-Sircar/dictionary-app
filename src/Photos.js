@@ -9,7 +9,10 @@ export default function Photos(props) {
             if (props.photos) {
               return (
                 <div key={index} className="col-4">
-                  <img src={photo.src.landscape} className="img-fluid"></img>
+                  <img
+                    src={photo.src.landscape}
+                    className="img-fluid"
+                    alt="photo"></img>
                 </div>
               );
             } else {
