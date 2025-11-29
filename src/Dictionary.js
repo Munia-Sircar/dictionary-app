@@ -11,12 +11,10 @@ export default function Dictionary() {
   let [photos, setPhotos] = useState("");
 
   function apiCall(response) {
-    console.log(response.data);
     setResults(response.data);
   }
 
   function imageApiCall(response) {
-    console.log(response.data.photos);
     setPhotos(response.data.photos);
   }
 
