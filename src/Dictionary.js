@@ -36,7 +36,7 @@ export default function Dictionary() {
     setWord(event.target.value);
   }
 
-  if (results) {
+  if (results && photos) {
     return (
       <div className="dictionary">
         <form onSubmit={submitWord}>
