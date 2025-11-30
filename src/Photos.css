@@ -1,0 +1,5 @@
+.Photos img:hover {
+  transform: scale(1.8);
+  transition: 1000ms ease-in-out;
+  cursor: pointer;
+}
